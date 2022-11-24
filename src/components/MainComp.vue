@@ -1,15 +1,108 @@
 <template>
   <div>
-    Ciao
+    <div class="prodotti">
+        <h1>SCOPRI TUTTI I <strong>PRODOTTI</strong></h1>
+        <h2>Scopri la <strong>pasta La Molisana:</strong> tipi e formati di pasta da grano 100% italiano decorticato a pietra e trafilata al bronzo.</h2>
+    </div>
+    <div class="pre-pasta">
+        <i class="fa-solid fa-vector-square"></i>
+        <span>Pasta per <strong>forma</strong></span>
+    </div>
+    <div class="cards">
+        <PastaCard v-for="(element, index) in pasta" :key="index" :dettagliPasta="element"/>
+    </div>
   </div>
 </template>
 
 <script>
+import PastaCard from './PastaCard.vue'
+
 export default {
-    name: 'MainComp'
+    name: 'MainComp',
+    components: {
+        PastaCard
+    },
+    data() {
+        return {
+            pasta: [
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/03/1-spaghetto-quadrato-2.png",
+                    'tipo': 'Pasta Lunga'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/05/29-caserecce-molisane.png",
+                    'tipo': 'Pasta Corta'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/03/15-spaghetti-1.png",
+                    'tipo': 'Spaghetti'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/05/20-penne-rigate.png",
+                    'tipo': 'Penne'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2022/01/28-fusilli.png",
+                    'tipo': 'Fusilli'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/05/ziti-tagliati.webp",
+                    'tipo': 'Ziti'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/10/gnocchi.png",
+                    'tipo': 'Gnocchi'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2021/10/50-ditalini-rigati-grandi-cucine.png",
+                    'tipo': 'Ditali'
+                },
+                {
+                    "img": "https://www.lamolisana.it/wp-content/uploads/2022/04/pastina.webp",
+                    'tipo': 'Pastina'
+                },
+
+            ]
+        }
+    }
 }
 </script>
 
 <style lang="scss" scoped>
+.prodotti {
+    width: 80%;
+    margin: 5px auto;
+    display: flex;
+    justify-content: space-between;
 
+    h1{
+        flex-basis: 50%;
+        font-weight: normal;
+        padding-top: 20px;
+
+    }
+    h2{
+        flex-basis: 50%;
+        font-style: italic;
+        font-weight: normal;
+    }
+}
+.pre-pasta{
+
+    margin: 30px auto;
+    width: 80%;
+    font-size: 1.8rem;
+    font-style: italic;
+
+    span{
+        padding-left: 10px;
+    }
+}
+
+.cards{
+    margin:10px auto;
+    width: 80%;
+    display: flex;
+    flex-wrap: wrap;
+}
 </style>
