@@ -2,18 +2,21 @@
   <div id="app">
     <HeaderComp/>
     <MainComp/>
+    <RicetteSection/>
   </div>
 </template>
 
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
+import RicetteSection from './components/RicetteSection.vue'
 
 export default {
   name: 'App',
   components: {
     HeaderComp,
-    MainComp
+    MainComp,
+    RicetteSection
   }
 }
 </script>

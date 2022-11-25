@@ -11,16 +11,25 @@
     <div class="cards">
         <PastaCard v-for="(element, index) in pasta" :key="index" :dettagliPasta="element"/>
     </div>
+    <div class="pre-pasta">
+        <i class="fa-solid fa-vector-square"></i>
+        <span>Pasta per <strong>linea</strong></span>
+    </div>
+    <div class="cards">
+        <LineaComp v-for="(element, index) in linea" :key="index" :dettagliLinea="element"/>
+    </div>
   </div>
 </template>
 
 <script>
 import PastaCard from './PastaCard.vue'
+import LineaComp from './LineaComp.vue'
 
 export default {
     name: 'MainComp',
     components: {
-        PastaCard
+        PastaCard,
+        LineaComp
     },
     data() {
         return {
@@ -61,7 +70,40 @@ export default {
                     "img": "https://www.lamolisana.it/wp-content/uploads/2022/04/pastina.webp",
                     'tipo': 'Pastina'
                 },
-
+            ],
+            linea: [
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/pasta-classica.webp",
+                    'name': "Le classiche"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2021/06/32-mezzi-rigatoni-integrali.webp",
+                    'name': "Le integrali"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/pasta-speciale.webp",
+                    'name': "Le speciali"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/pasta-biologica.webp",
+                    'name': "Le biologiche"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/08/pasta-sfiziosa.webp",
+                    'name': "Le sfiziose"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/pasta-senza-glutine.webp",
+                    'name': "Gluten-free"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/le-semole.webp",
+                    'name': "Le semole"
+                },
+                {
+                    'img': "https://www.lamolisana.it/wp-content/uploads/2022/04/rossi.webp",
+                    'name': "I Rossi"
+                },
             ]
         }
     }
@@ -85,6 +127,8 @@ export default {
         flex-basis: 50%;
         font-style: italic;
         font-weight: normal;
+        background: rgb(246, 238, 238);
+        padding: 10px;
     }
 }
 .pre-pasta{
