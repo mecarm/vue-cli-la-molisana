@@ -54,6 +54,12 @@ export default {
             padding: 10px 30px;
             color: white;
             cursor: pointer;
+
+            &:hover{
+                font-size: 1.1rem;
+                font-weight: bold;
+                border-radius: 10px;
+            }
         }
 
         .ricette{

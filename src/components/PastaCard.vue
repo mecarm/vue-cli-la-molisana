@@ -17,10 +17,10 @@ export default {
 
 <style lang="scss" scoped>
     .card{
-        width: calc((100% / 5) - 20px);
+        width: calc((100% / 5) - 10px);
         text-align: center;
         border: 1px solid rgb(198, 196, 196);
-        margin: 10px;
+        margin: 5px;
         padding: 20px;
 
         img{

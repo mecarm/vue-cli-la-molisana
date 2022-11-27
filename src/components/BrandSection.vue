@@ -50,7 +50,7 @@ export default {
         color: #483012;
 
         h1{
-            margin: 10px 0;
+            margin: 5px 0;
         }
         p{
             text-align: center;
@@ -58,7 +58,7 @@ export default {
         }
 
         div{
-            margin: 10px 0;
+            margin: 5px 0;
             background: #483012;
             color: white;
             display:  inline-block;

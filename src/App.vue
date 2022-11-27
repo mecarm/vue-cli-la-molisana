@@ -4,6 +4,7 @@
     <MainComp/>
     <BrandSection/>
     <RicetteSection/>
+    <FooterComp/>
   </div>
 </template>
 
@@ -12,6 +13,7 @@ import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
 import BrandSection from './components/BrandSection.vue'
 import RicetteSection from './components/RicetteSection.vue'
+import FooterComp from './components/FooterComp.vue'
 
 export default {
   name: 'App',
@@ -19,7 +21,8 @@ export default {
     HeaderComp,
     MainComp,
     BrandSection,
-    RicetteSection
+    RicetteSection,
+    FooterComp
     }
 }
 </script>
