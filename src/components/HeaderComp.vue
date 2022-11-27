@@ -89,6 +89,7 @@ export default {
 
     hr{
       border: 1px solid black;
+      margin: 5px 0;
     }
   }
 </style>

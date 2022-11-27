@@ -135,7 +135,7 @@ export default {
 
     margin: 30px auto;
     width: 90%;
-    font-size: 1.8rem;
+    font-size: 1.6rem;
     font-style: italic;
 
     span{

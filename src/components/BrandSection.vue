@@ -51,6 +51,7 @@ export default {
 
         h1{
             margin: 5px 0;
+            font-size: 1.5rem;
         }
         p{
             text-align: center;

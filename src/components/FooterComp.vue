@@ -103,7 +103,6 @@ export default {
     }
     .logo{
         width: 5%;
-        
 
         img{
             width: 100%;
