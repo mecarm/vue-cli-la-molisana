@@ -1,34 +1,15 @@
 <template>
   <div class="container">
-    <div class="card">
-        <div>
-            <i class="fa-solid fa-plate-wheat"></i>
-        </div>
-        <h1>Il Grano</h1>
-        <p>UTILIZZIAMO SOLO GRANO COLTIVATO IN MOLISE, ABRUZZO, PUGLIA, LAZIO E MARCHE, REGIONI DA SEMPRE VOCATE ALLA PRODUZIONE DI GRANO DURO DI ALTA QUALITÀ.</p>
+    <div class="card ricette">
+        <h1>LE RICETTE</h1>
+        <p>Tutte le nostre Ricette di Primi Piatti di Pasta La Molisana: ingredienti, preparazione, consigli e tanto altro per ricette di pasta per tutti i palati.</p>
+        <div><button>APRI</button></div>
     </div>
-    <div class="card">
-        <div>
-            <i class="fa-solid fa-plate-wheat"></i>
-        </div>
-        <h1>Il Molino</h1>
-        <p>MACINIAMO DA CINQUE GENERAZIONI IL MIGLIOR GRANO, LO DECORTICHIAMO A PIETRA PER PRODURRE SEMOLE PIÙ SICURE DAL PUNTO DI VISTA IGIENICO-SANITARIO.</p>
+    <div class="card blog">
+        <h1>IL BLOG</h1>
+        <p>Perché dopo anni di ricerca siamo fieri di annunciare che La Molisana è a scaffale con una pasta di solo grano italiano</p>
+        <div><button>APRI</button></div>
     </div>
-    <div class="card">
-        <div>
-            <i class="fa-solid fa-plate-wheat"></i>
-        </div>
-        <h1>Il Pastificio</h1>
-        <p>TRAFILIAMO AL BRONZO PER OTTENERE UNA PASTA RUVIDA E TENACE CON UN’ECCELLENTE TENUTA IN COTTURA.</p>
-    </div>
-    <div class="card">
-        <div>
-            <i class="fa-solid fa-plate-wheat"></i>
-        </div>
-        <h1>L'Acqua</h1>
-        <p>IMPASTIAMO LE NOSTRE SEMOLE CON ACQUA PURA, IPOSODICA CON CARATTERISTICHE OLIGOMINERALI DELLE SORGENTI DEL MATESE.</p>
-    </div>
-
   </div>
 </template>
 
@@ -39,37 +20,54 @@ export default {
 </script>
 
 <style lang="scss" scoped>
-.container{
-    width: 80%;
-    margin: 20px auto;
-    display: flex;
-    justify-content: space-between;
+    .container{
+        width: 90%;
+        margin: 50px auto;
+        display: flex;
+        justify-content: space-between;
+        color: white;
+        .card{
+            text-align: center;
+            padding: 50px;
+            width: calc(100% / 2);
+            margin: 10px;
+            aspect-ratio: 16/9;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            border-radius: 5px ;
+            font-size: 1.2rem;
+            font-weight: bold;
 
-    .card{
-        width: calc(100% / 5);
-        text-align: center;
-        color: #483012;
-
-        h1{
-            margin: 10px 0;
-        }
-        p{
-            text-align: start;
-            font-size: 0.8rem;
+            &:hover{
+                opacity: 0.8;
+            }
         }
 
         div{
-            margin: 10px 0;
-            background: #483012;
-            color: white;
-            display:  inline-block;
-            padding: 15px;
-            border-radius: 50%;
+            margin-top: 20px;
+        }
 
-            i{
-                font-size: 3.0rem;
-            }
+        button{
+            background: rgba(255, 255, 255, 0);
+            border: 1px solid white;
+            padding: 10px 30px;
+            color: white;
+            cursor: pointer;
+        }
+
+        .ricette{
+            background-image: url('https://images.unsplash.com/photo-1579684947550-22e945225d9a?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1674&q=80');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+
+        }
+        .blog{
+            background-image: url('https://images.unsplash.com/photo-1515276427842-f85802d514a2?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1776&q=80');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
         }
     }
-}
 </style>

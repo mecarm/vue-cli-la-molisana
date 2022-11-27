@@ -112,7 +112,7 @@ export default {
 
 <style lang="scss" scoped>
 .prodotti {
-    width: 80%;
+    width: 90%;
     margin: 5px auto;
     display: flex;
     justify-content: space-between;
@@ -127,14 +127,14 @@ export default {
         flex-basis: 50%;
         font-style: italic;
         font-weight: normal;
-        background: rgb(246, 238, 238);
+        background: #F8F8F8;
         padding: 10px;
     }
 }
 .pre-pasta{
 
     margin: 30px auto;
-    width: 80%;
+    width: 90%;
     font-size: 1.8rem;
     font-style: italic;
 
@@ -145,7 +145,7 @@ export default {
 
 .cards{
     margin:10px auto;
-    width: 80%;
+    width: 90%;
     display: flex;
     flex-wrap: wrap;
 }

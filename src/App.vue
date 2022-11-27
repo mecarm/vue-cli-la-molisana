@@ -2,6 +2,7 @@
   <div id="app">
     <HeaderComp/>
     <MainComp/>
+    <BrandSection/>
     <RicetteSection/>
   </div>
 </template>
@@ -9,6 +10,7 @@
 <script>
 import HeaderComp from './components/HeaderComp.vue'
 import MainComp from './components/MainComp.vue'
+import BrandSection from './components/BrandSection.vue'
 import RicetteSection from './components/RicetteSection.vue'
 
 export default {
@@ -16,8 +18,9 @@ export default {
   components: {
     HeaderComp,
     MainComp,
+    BrandSection,
     RicetteSection
-  }
+    }
 }
 </script>
 
